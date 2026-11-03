@@ -43,7 +43,7 @@ disable-model-invocation: true
 1. **Звіт** — `05-runs/<дата>/report.md` за `templates/run-report.md`: підсумок, таблиця по кейсах, таблиця по CHK, деталі FAIL / BLOCKED / FLAKY.
 2. **Результати в чек-лист** — у `03-checklist.md`, колонка «Результат» для рядків «агент»: Pass / Fail / Blocked (FLAKY → Blocked з приміткою у звіті). Ручні рядки не чіпай. Перегенеруй xlsx: `python3 .claude/skills/qa-checklist/scripts/build_xlsx.py work/<ID>/03-checklist.md`.
 3. **Статуси кейсів** — оновлюй у `_index.md`: 3 прогони поспіль з однаковим результатом → «стабільний».
-4. **Баги** — для кожного FAIL без позначки «потребує рішення QA» підготуй чернетку `work/<ID>/bugs/BUG-xxx.md` за `qa-bug-report/templates/BUG.md` зі статусом «чернетка». У Azure DevOps нічого не заводь.
+4. **Баги** — для кожного FAIL без позначки «потребує рішення QA» підготуй чернетку за правилами скіла `qa-bug-report` (`work/<ID>/bugs/BUG-xxx.md`, статус «чернетка»). Баги в Azure DevOps заводить QA сам.
 5. **Підсумок у чаті** — 3–6 рядків: PASS / FAIL / BLOCKED / FLAKY, що потребує рішення QA, які чернетки багів готові, що лишилось вручну.
 
 ## Правила
