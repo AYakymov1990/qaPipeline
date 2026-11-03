@@ -21,10 +21,12 @@
 
 ## Етапи pipeline
 
-1. `qa-req-review` → `01-review.md`, `01-answers.md`
-2. `qa-spec` → `02-spec.md`
-3. `qa-checklist` → `03-checklist.xlsx` + `03-checklist.md` (заплановано)
-4. `qa-agent-cases` / `qa-agent-run` → `04-cases/`, `05-runs/` (заплановано)
-5. `qa-bug-report` → `bugs/` (заплановано)
+Нова задача — спершу `qa-pipeline`: він обирає маршрут S / M / L за ризиком (гроші, статуси, інтеграції = L).
+
+1. `qa-req-review` → `01-review.md`, `01-answers.md` (маршрути M, L)
+2. `qa-spec` → `02-spec.md` (маршрут L)
+3. `qa-checklist` → `03-checklist.md` → `03-checklist.xlsx` (усі маршрути)
+4. `qa-agent-cases` / `qa-agent-run` → `04-cases/`, `05-runs/` (за бажанням; заплановано)
+5. `qa-bug-report` → `bugs/` (за потреби; заплановано)
 
 Якщо в `qa-context/` бракує факту, потрібного кільком задачам, — запропонуй QA додати його туди (не додавай сам без згоди).

@@ -7,9 +7,10 @@
 | Етап | Скіл | Що робить | Артефакт | Статус |
 | --- | --- | --- | --- | --- |
 | 0 | `prompts/build-context.md` | Збирає базовий контекст проєкту з документації | `qa-context/*` | готово |
+| — | `qa-pipeline` | Визначає маршрут задачі (S / M / L) і наступний крок | `pipeline.md` | готово |
 | 1 | `qa-req-review` | Ревʼю вимог: дефекти, питання, промпти для пошуку відповідей у документації | `01-review.md`, `01-answers.md` | готово |
 | 2 | `qa-spec` | Тестова специфікація з REQ-ID і критеріями Given/When/Then | `02-spec.md` | готово |
-| 3 | `qa-checklist` | Чек-лист (існуючий скіл + ID, колонка «Вимога») | `03-checklist.xlsx`, `03-checklist.md` | заплановано |
+| 3 | `qa-checklist` | Чек-лист від специфікації, ревʼю або задачі; правила якості й тест-дизайну | `03-checklist.md` → `03-checklist.xlsx` | готово |
 | 4a | `qa-agent-cases` | Кейси для агента | `04-cases/TC-*.md` | заплановано |
 | 4b | `qa-agent-run` | Прогін через Playwright MCP на тестовому стенді | `05-runs/<дата>/` | заплановано |
 | 5 | `qa-bug-report` | Баг-репорти за шаблоном → Azure DevOps | `bugs/BUG-*.md` | заплановано |
@@ -20,7 +21,11 @@
 2. Скопіюйте `.env.example` у `.env` і заповніть (файл не комітиться).
 3. Покладіть документацію в `docs/technical/` і `docs/business/` (або додайте посилання в `qa-context/sources.md`).
 4. Етап 0: вставте в Claude Code вміст `prompts/build-context.md` → перевірте `qa-context/PROJECT.md` → закомітьте.
-5. Етап 1: `/qa-req-review` + текст вимоги або ID задачі.
+5. Нова задача: `/qa-pipeline` + ID задачі — скіл визначить маршрут:
+   - **S** (текст, верстка, одне поле) — одразу `/qa-checklist`;
+   - **M** (кілька сценаріїв, ролей, площадок) — `/qa-req-review` → `/qa-checklist`;
+   - **L** (гроші, статуси, інтеграції, нова функціональність) — `/qa-req-review` → `/qa-spec` → `/qa-checklist`.
+6. Для xlsx потрібен Python 3 з `openpyxl`: `pip install openpyxl`.
 
 Playwright MCP підключається автоматично з `.mcp.json` (потрібен Node.js 18+).
 
