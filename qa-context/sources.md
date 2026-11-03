@@ -33,6 +33,17 @@
 | Нотифікації (email, push, SMS) | заповнити | |
 | Feature flags, права доступу | заповнити | |
 
+Глосарії зон із іменами в коді: `kb/<Група>/<Зона>/_glossary.md` — корисні для ключових слів у промптах пошуку.
+
+## Обговорення задачі
+
+| Джерело | Як потрапляє в pipeline |
+| --- | --- |
+| Опис задачі і посилання на Figma | Azure DevOps → `work/<ID>/00-input/requirement.md` |
+| Коментарі задачі | Azure DevOps → `work/<ID>/00-input/comments.md` |
+| Транскрипції грумінгів | передає QA → `work/<ID>/00-input/grooming-YYYY-MM-DD.md` |
+| Особисті повідомлення | передає QA → `work/<ID>/00-input/notes.md` |
+
 ## Чого немає в CodeWiki
 
 | Тема | Де брати |
