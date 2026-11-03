@@ -6,7 +6,8 @@ severity: Blocker | Critical | Major | Minor | Trivial   # визначення 
 priority: High | Medium | Low
 locale: es
 role: <роль>
-platform: desktop | mobile-web | app
+platform: desktop | mobile-web
+site: <ID площадки>          # 1, 22, 28, 30, 31, 618, 1441, 2223
 links:
   task: <ID задачі>
   requirement: REQ-001
