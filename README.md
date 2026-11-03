@@ -21,7 +21,7 @@
 1. Встановіть [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) і відкрийте цю папку: `claude`.
 2. Скопіюйте `.env.example` у `.env` і заповніть (файл не комітиться).
 3. Покладіть документацію в `docs/technical/` і `docs/business/` (або додайте посилання в `qa-context/sources.md`).
-4. Етап 0: вставте в Claude Code вміст `prompts/build-context.md` → перевірте `qa-context/PROJECT.md` → закомітьте.
+4. Етап 0: базовий контекст уже зібрано. Дозаповніть прогалини промптом `prompts/fill-context-gaps.md` (Claude Code з доступом до CodeWiki: `claude --add-dir <шлях до CodeWiki>`) → перегляньте `git diff qa-context/` → закомітьте. `prompts/build-context.md` — для збору з нуля (новий проєкт).
 5. Нова задача: `/qa-pipeline` + ID задачі — скіл визначить маршрут:
    - **S** (текст, верстка, одне поле) — одразу `/qa-checklist`;
    - **M** (кілька сценаріїв, ролей, площадок) — `/qa-req-review` → `/qa-checklist` → `/qa-dev-checklist`;
