@@ -149,5 +149,6 @@
 - `glossary.md` — терміни
 - `domain/order.md`, `domain/payment.md`, `domain/delivery.md`, `domain/recalvi.md` — статуси і правила
 - `test-data.md` — тестові дані
+- `howto/` — інструкції: як створити дані й отримати потрібний стан
 - `sources.md` — карта документації (де що шукати)
 - `open-questions.md` — відкриті питання по контексту
