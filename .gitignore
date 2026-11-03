@@ -1,0 +1,18 @@
+# секрети
+.env
+.env.*
+!.env.example
+
+# сесії браузера (cookies, токени)
+.auth/
+*.storage-state.json
+
+# великі артефакти прогонів (звіти комітимо, медіа — ні)
+work/**/05-runs/**/*.png
+work/**/05-runs/**/*.webm
+work/**/05-runs/**/*.zip
+work/**/05-runs/**/*.har
+
+# системне
+.DS_Store
+node_modules/
