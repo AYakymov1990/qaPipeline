@@ -89,6 +89,8 @@ def check(rows):
             warnings.append(f"рядок {i}: № = «{r['№']}», очікувалось {i} (нумерація наскрізна)")
         if r["Пріоритет"] not in PRIORITIES:
             warnings.append(f"№ {r['№']}: пріоритет «{r['Пріоритет']}» не з переліку {PRIORITIES}")
+        if r.get("Результат") and r["Результат"] not in RESULTS:
+            warnings.append(f"№ {r['№']}: результат «{r['Результат']}» не з переліку {RESULTS}")
         if not r["Перевірка"] or not r["Очікуваний результат"]:
             warnings.append(f"№ {r['№']}: порожня перевірка або очікуваний результат")
         is_reg = r["Розділ"] == REGRESSION_SECTION
@@ -151,7 +153,7 @@ def build(title, desc, rows, out):
             r += 1
             prev_block = row["Блок"]
         values = [int(row["№"]) if row["№"].isdigit() else row["№"], row["Перевірка"],
-                  row["Очікуваний результат"], row["Пріоритет"], row["Вимога"], ""]
+                  row["Очікуваний результат"], row["Пріоритет"], row["Вимога"], row.get("Результат", "")]
         for i, v in enumerate(values, 1):
             c = ws.cell(r, i, v)
             c.border, c.alignment = BORDER, WRAP_TOP
