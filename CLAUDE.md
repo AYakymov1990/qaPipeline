@@ -22,7 +22,7 @@
 ## Етапи pipeline
 
 1. `qa-req-review` → `01-review.md`, `01-answers.md`
-2. `qa-spec` → `02-spec.md` (заплановано)
+2. `qa-spec` → `02-spec.md`
 3. `qa-checklist` → `03-checklist.xlsx` + `03-checklist.md` (заплановано)
 4. `qa-agent-cases` / `qa-agent-run` → `04-cases/`, `05-runs/` (заплановано)
 5. `qa-bug-report` → `bugs/` (заплановано)
