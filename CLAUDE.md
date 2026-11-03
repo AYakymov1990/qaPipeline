@@ -26,6 +26,7 @@
 1. `qa-req-review` → `01-review.md`, `01-answers.md` (маршрути M, L)
 2. `qa-spec` → `02-spec.md` (маршрут L)
 3. `qa-checklist` → `03-checklist.md` → `03-checklist.xlsx` (усі маршрути)
+3b. `qa-dev-checklist` → `03-dev-checklist.md` — самоперевірка для розробника перед тестом (M, L; S — за бажанням)
 4. `qa-agent-cases` / `qa-agent-run` → `04-cases/`, `05-runs/` — агент перевіряє новий функціонал; регрес — автотести
 5. `qa-bug-report` → `bugs/` (за потреби; заплановано)
 

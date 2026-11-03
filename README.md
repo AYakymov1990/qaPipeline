@@ -11,6 +11,7 @@
 | 1 | `qa-req-review` | Ревʼю вимог: дефекти, питання, промпти для пошуку відповідей у документації | `01-review.md`, `01-answers.md` | готово |
 | 2 | `qa-spec` | Тестова специфікація з REQ-ID і критеріями Given/When/Then | `02-spec.md` | готово |
 | 3 | `qa-checklist` | Чек-лист від специфікації, ревʼю або задачі; правила якості й тест-дизайну | `03-checklist.md` → `03-checklist.xlsx` | готово |
+| 3b | `qa-dev-checklist` | Чек-лист самоперевірки для розробника перед переведенням задачі в тест | `03-dev-checklist.md` | готово |
 | 4a | `qa-agent-cases` | Кейси для агента з рядків «агент» чек-листа | `04-cases/TC-*.md` | готово |
 | 4b | `qa-agent-run` | Прогін через Playwright MCP на тестовому стенді; тільки явний запуск `/qa-agent-run <ID>` | `05-runs/<дата>/` | готово |
 | 5 | `qa-bug-report` | Баг-репорти за шаблоном → Azure DevOps | `bugs/BUG-*.md` | заплановано |
@@ -23,8 +24,8 @@
 4. Етап 0: вставте в Claude Code вміст `prompts/build-context.md` → перевірте `qa-context/PROJECT.md` → закомітьте.
 5. Нова задача: `/qa-pipeline` + ID задачі — скіл визначить маршрут:
    - **S** (текст, верстка, одне поле) — одразу `/qa-checklist`;
-   - **M** (кілька сценаріїв, ролей, площадок) — `/qa-req-review` → `/qa-checklist`;
-   - **L** (гроші, статуси, інтеграції, нова функціональність) — `/qa-req-review` → `/qa-spec` → `/qa-checklist`.
+   - **M** (кілька сценаріїв, ролей, площадок) — `/qa-req-review` → `/qa-checklist` → `/qa-dev-checklist`;
+   - **L** (гроші, статуси, інтеграції, нова функціональність) — `/qa-req-review` → `/qa-spec` → `/qa-checklist` → `/qa-dev-checklist`.
 6. Для xlsx потрібен Python 3 з `openpyxl`: `pip install openpyxl`.
 
 Playwright MCP підключається автоматично з `.mcp.json` (потрібен Node.js 18+).

@@ -12,6 +12,7 @@ links:
   task: <ID задачі>
   requirement: REQ-001
   check: CHK-001
+  dev_check: DEV-01         # якщо пункт був у чек-листі розробника
   case: TC-001
   run: 05-runs/YYYY-MM-DD/report.md
 source: агент | вручну

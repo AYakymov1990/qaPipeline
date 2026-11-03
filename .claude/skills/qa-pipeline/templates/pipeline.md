@@ -14,5 +14,6 @@
 | 1. Ревʼю вимог | `qa-req-review` | так / ні | — / готово | `01-review.md` |
 | 2. Специфікація | `qa-spec` | так / ні | — / чернетка / погоджено | `02-spec.md` |
 | 3. Чек-лист | `qa-checklist` | так | — / готово | `03-checklist.xlsx`, `03-checklist.md` |
+| 3b. Чек-лист для розробника | `qa-dev-checklist` | так / за бажанням | — / передано в задачу | `03-dev-checklist.md` |
 | 4. Кейси і прогін | `qa-agent-cases`, `qa-agent-run` | за бажанням | — / готово | `04-cases/`, `05-runs/` |
 | 5. Баги | `qa-bug-report` | за потреби | — | `bugs/` |
