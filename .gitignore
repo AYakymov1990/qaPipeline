@@ -14,5 +14,7 @@ work/**/05-runs/**/*.zip
 work/**/05-runs/**/*.har
 
 # системне
+.venv/
+__pycache__/
 .DS_Store
 node_modules/

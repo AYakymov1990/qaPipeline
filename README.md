@@ -26,7 +26,13 @@
    - **S** (текст, верстка, одне поле) — одразу `/qa-checklist`;
    - **M** (кілька сценаріїв, ролей, площадок) — `/qa-req-review` → `/qa-checklist` → `/qa-dev-checklist`;
    - **L** (гроші, статуси, інтеграції, нова функціональність) — `/qa-req-review` → `/qa-spec` → `/qa-checklist` → `/qa-dev-checklist`.
-6. Для xlsx потрібен Python 3 з `openpyxl`: `pip install openpyxl`.
+6. Для xlsx потрібен Python 3 з `openpyxl`:
+   ```bash
+   python3 -m pip install --user openpyxl
+   # якщо помилка externally-managed-environment (Python з Homebrew):
+   python3 -m venv .venv && source .venv/bin/activate && pip install openpyxl
+   ```
+   З `.venv` — активуйте його (`source .venv/bin/activate`) перед запуском `claude`.
 
 Playwright MCP підключається автоматично з `.mcp.json` (потрібен Node.js 18+).
 
