@@ -8,7 +8,8 @@
 | | |
 | --- | --- |
 | Гілка | `docs/wiki-kb-pilot` репозиторію AvtoPro |
-| Шлях до CodeWiki | `/Users/oleksandrpc/Desktop/ABP/avto/CodeWiki` (окрема робоча копія гілки, тільки читання) |
+| Шлях до CodeWiki | `/Users/oleksandrpc/Desktop/ABP/avto/CodeWiki/CodeWiki` — вкладена папка робочої копії гілки (тільки читання) |
+| Робоча копія гілки | `/Users/oleksandrpc/Desktop/ABP/avto/CodeWiki` — там також код гілки документації; **для аналізу коду не використовувати** (код розробника — тільки `AvtoPro`) |
 | Точка входу | `README.md`, `AUTOUPDATE.md`, індекс у `kb/` |
 | Пошук агентом | скіл `qa-docs-lookup` |
 

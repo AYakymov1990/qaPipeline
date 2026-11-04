@@ -27,7 +27,8 @@ Claude Code працює в ізольованій пісочниці Docker San
 ```
 avto/
 ├── AvtoPro/            git-репозиторій проєкту: гілка розробника (тільки читання в пісочниці)
-├── CodeWiki/           та сама репа, гілка docs/wiki-kb-pilot — документація (тільки читання)
+├── CodeWiki/           та сама репа, гілка docs/wiki-kb-pilot
+│   └── CodeWiki/       сама вікі: kb/, tools/, README.md, AUTOUPDATE.md (підключається тільки вона)
 └── qaPipeline-repo/    цей репозиторій
 ```
 
@@ -70,14 +71,16 @@ git merge master --no-edit      # лише якщо потрібна свіжа 
 sbx run --name avtopro-qa claude \
   /Users/oleksandrpc/Desktop/ABP/avto/qaPipeline-repo \
   /Users/oleksandrpc/Desktop/ABP/avto/AvtoPro:ro \
-  /Users/oleksandrpc/Desktop/ABP/avto/CodeWiki:ro
+  /Users/oleksandrpc/Desktop/ABP/avto/CodeWiki/CodeWiki:ro
 ```
+
+Підключається тільки вкладена папка з вікі: у корені робочої копії гілки документації є ще й код, який не стосується задачі.
 
 Пісочниця вже створена з двома папками — щоб додати CodeWiki, спершу `sbx rm avtopro-qa` (файли не зачіпає), потім команда вище.
 
 Усередині Claude Code: `/login`, потім `/status` — має бути підписка, а не «API Usage Billing». Питання про MCP-сервер `playwright` — можна відмовитись: браузер у пісочниці не потрібен.
 
-Перевірка: `pwd` — папка `qaPipeline-repo`; спроба створити файл у `../AvtoPro` — помилка (тільки читання); `git -C ../AvtoPro --no-optional-locks diff --stat master...HEAD` — список змін розробника; `ls ../CodeWiki/kb` — індекс документації.
+Перевірка: `pwd` — папка `qaPipeline-repo`; спроба створити файл у `../AvtoPro` — помилка (тільки читання); `git -C ../AvtoPro --no-optional-locks diff --stat master...HEAD` — список змін розробника; `ls /Users/oleksandrpc/Desktop/ABP/avto/CodeWiki/CodeWiki/kb` — індекс документації.
 
 ## Щодня
 
