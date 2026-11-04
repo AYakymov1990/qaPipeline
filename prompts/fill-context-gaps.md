@@ -3,8 +3,10 @@
 Базовий контекст уже зібрано вручну за відповідями з CodeWiki. Цей промпт **тільки дозаповнює прогалини** і нічого не переписує. Запускайте в Claude Code у корені цього репозиторію з доступом до CodeWiki, наприклад:
 
 ```bash
-claude --add-dir <шлях до папки CodeWiki>
+claude --add-dir /Users/oleksandrpc/Desktop/ABP/avto/CodeWiki
 ```
+
+Або в пісочниці, де CodeWiki вже підключено (`docs/sandbox-macos.md`).
 
 Потім вставте текст нижче або скажіть: «виконай prompts/fill-context-gaps.md».
 
