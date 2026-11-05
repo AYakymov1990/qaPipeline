@@ -39,7 +39,7 @@
 2. `qa-spec` → `02-spec.md` (маршрут L)
 3. `qa-checklist` → `03-checklist.md` → `03-checklist.xlsx` (усі маршрути)
 3b. `qa-dev-checklist` → `03-dev-checklist.md` — самоперевірка для розробника перед тестом (M, L; S — за бажанням)
-4. `qa-agent-cases` / `qa-agent-run` → `04-cases/`, `05-runs/` — агент перевіряє новий функціонал; регрес — автотести
+4. `qa-agent-cases` → `qa-agent-recon` (розвідка) → `qa-agent-run` (покроково з апрувом QA) → `04-cases/`, `05-runs/` — агент перевіряє новий функціонал; регрес — автотести. Браузерні етапи — у Claude Code на Mac, не в пісочниці
 5. `qa-bug-report` → `bugs/` — текст для ручного перенесення в Azure DevOps
 
 ## Стан задачі — у файлах
