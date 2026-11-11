@@ -13,6 +13,14 @@
 | Точка входу | `README.md`, `AUTOUPDATE.md`, індекс у `kb/` |
 | Пошук агентом | скіл `qa-docs-lookup` |
 
+## Автотести
+
+| | |
+| --- | --- |
+| Автотести | `/Users/oleksandrpc/Desktop/ABP/avto/AvtoProAutomation` — проєкт AvtoProAutomation, тільки читання |
+| Карта | `qa-context/autotests-map.md` (будує скіл `qa-autotests-coverage`) |
+| Покриття по задачі | скіл `qa-autotests-coverage` → `work/<ID>/00-input/autotests-coverage.md` |
+
 ## Де шукати за темою
 
 | Тема | Розділи CodeWiki | Примітки |

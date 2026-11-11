@@ -27,6 +27,7 @@ Claude Code працює в ізольованій пісочниці Docker San
 ```
 avto/
 ├── AvtoPro/            git-репозиторій проєкту: гілка розробника (тільки читання в пісочниці)
+├── AvtoProAutomation/  проєкт автотестів (тільки читання)
 ├── CodeWiki/           та сама репа, гілка docs/wiki-kb-pilot
 │   └── CodeWiki/       сама вікі: kb/, tools/, README.md, AUTOUPDATE.md (підключається тільки вона)
 └── qaPipeline-repo/    цей репозиторій
@@ -71,7 +72,8 @@ git merge master --no-edit      # лише якщо потрібна свіжа 
 sbx run --name avtopro-qa claude \
   /Users/oleksandrpc/Desktop/ABP/avto/qaPipeline-repo \
   /Users/oleksandrpc/Desktop/ABP/avto/AvtoPro:ro \
-  /Users/oleksandrpc/Desktop/ABP/avto/CodeWiki/CodeWiki:ro
+  /Users/oleksandrpc/Desktop/ABP/avto/CodeWiki/CodeWiki:ro \
+  /Users/oleksandrpc/Desktop/ABP/avto/AvtoProAutomation:ro
 ```
 
 Підключається тільки вкладена папка з вікі: у корені робочої копії гілки документації є ще й код, який не стосується задачі.
@@ -86,6 +88,7 @@ sbx run --name avtopro-qa claude \
 
 ```bash
 git -C ~/Desktop/ABP/avto/CodeWiki pull          # свіжа документація
+git -C ~/Desktop/ABP/avto/AvtoProAutomation pull # свіжі автотести
 cd ~/Desktop/ABP/avto/qaPipeline-repo && sbx run avtopro-qa
 ```
 

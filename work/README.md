@@ -10,6 +10,7 @@ work/<ID>/
 │   ├── grooming-YYYY-MM-DD.md  транскрипції грумінгів
 │   ├── notes.md            контекст з особистих повідомлень
 │   ├── code-changes.md     що реально змінено в коді (qa-code-changes)
+│   ├── autotests-coverage.md  покриття регресу автотестами (qa-autotests-coverage)
 │   └── test-data.md        стенд, акаунти (назви змінних з .env) і дані під задачу — вказує QA
 ├── 01-review.md            ревʼю вимог: дефекти RD, питання Q, промпти пошуку
 ├── 01-answers.md           відповіді на питання (заповнює QA)

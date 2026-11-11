@@ -12,6 +12,7 @@
 | — | `qa-context-update` | Поповнює `qa-context/` фактами і тестовими даними з роботи — для переиспользування; тільки з підтвердження QA | `qa-context/*` | готово |
 | — | `qa-docs-lookup` | Агент сам шукає відповіді в CodeWiki (гілка `docs/wiki-kb-pilot`) і закриває питання з джерелом | `01-answers.md`, кандидати в контекст | готово |
 | 0c | `qa-code-changes` | Аналіз змін розробника в коді AvtoPro (пісочниця, код тільки для читання) — `docs/sandbox-macos.md` | `00-input/code-changes.md` | готово |
+| 0d | `qa-autotests-coverage` | Покриття регресу автотестами AvtoProAutomation: що прогнати, прогалини, тести на оновлення; карта автотестів | `00-input/autotests-coverage.md`, `qa-context/autotests-map.md` | готово |
 | 1 | `qa-req-review` | Ревʼю вимог: дефекти, питання, промпти для пошуку відповідей у документації | `01-review.md`, `01-answers.md` | готово |
 | 2 | `qa-spec` | Тестова специфікація з REQ-ID і критеріями Given/When/Then | `02-spec.md` | готово |
 | 3 | `qa-checklist` | Чек-лист від специфікації, ревʼю або задачі; правила якості й тест-дизайну | `03-checklist.md` → `03-checklist.xlsx` | готово |
