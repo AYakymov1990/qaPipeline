@@ -3,6 +3,10 @@
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest"]
+    },
+    "azure-devops": {
+      "command": "npx",
+      "args": ["-y", "@azure-devops/mcp", "abp", "-d", "core", "work-items"]
     }
   }
 }

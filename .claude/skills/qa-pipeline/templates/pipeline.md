@@ -11,6 +11,7 @@
 
 | Етап | Скіл | Потрібен | Статус | Файл |
 | --- | --- | --- | --- | --- |
+| 0a. Задача з Azure DevOps | `qa-ado-fetch` | так | — / отримано (rev N) | `00-input/requirement.md`, `comments.md` |
 | 0c. Аналіз змін у коді | `qa-code-changes` | так / за бажанням / немає гілки | — / готово | `00-input/code-changes.md` |
 | 0d. Покриття регресу автотестами | `qa-autotests-coverage` | так / немає регресу | — / готово | `00-input/autotests-coverage.md` |
 | 1. Ревʼю вимог | `qa-req-review` | так / ні | — / готово | `01-review.md` |

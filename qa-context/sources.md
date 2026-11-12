@@ -67,8 +67,8 @@
 
 | Джерело | Як потрапляє в pipeline |
 | --- | --- |
-| Опис задачі і посилання на Figma | Azure DevOps → `work/<ID>/00-input/requirement.md` |
-| Коментарі задачі | Azure DevOps → `work/<ID>/00-input/comments.md` |
+| Опис задачі, критерії, звʼязки, Figma | MCP `azure-devops` (організація `abp`, проєкт `Avto.Pro`), скіл `qa-ado-fetch` → `work/<ID>/00-input/requirement.md` |
+| Коментарі задачі | `qa-ado-fetch` → `work/<ID>/00-input/comments.md` |
 | Транскрипції грумінгів | передає QA → `work/<ID>/00-input/grooming-YYYY-MM-DD.md` |
 | Особисті повідомлення | передає QA → `work/<ID>/00-input/notes.md` |
 

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__azure-devops__wit_create_work_item",
+      "mcp__azure-devops__wit_update_work_item",
+      "mcp__azure-devops__wit_update_work_items_batch",
+      "mcp__azure-devops__wit_add_work_item_comment",
+      "mcp__azure-devops__wit_add_child_work_items",
+      "mcp__azure-devops__wit_work_items_link",
+      "mcp__azure-devops__wit_work_item_unlink",
+      "mcp__azure-devops__wit_add_artifact_link",
+      "mcp__azure-devops__wit_link_work_item_to_pull_request"
+    ]
+  }
+}

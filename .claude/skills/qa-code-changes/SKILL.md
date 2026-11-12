@@ -12,6 +12,7 @@ description: "Аналіз змін розробника в коді AvtoPro д�
 ## Де код і що з ним можна
 
 - Шлях до репозиторію AvtoPro — з `work/<ID>/00-input/test-data.md` (поле «Код AvtoPro»); немає — спитай QA і запиши туди.
+- Гілка розробника — з того ж поля (туди її записує `qa-ado-fetch` з розділу Development задачі). Поточна гілка в AvtoPro інша — скажи QA, яку гілку переключити на Mac, і не аналізуй чужу.
 - Код підключено **тільки для читання**. Ніколи не змінюй файли AvtoPro і не запускай команд, що пишуть у його `.git`: `checkout`, `merge`, `fetch`, `pull`, `commit`, `stash`, `clean`, `reset`. Гілку готує QA на Mac до запуску.
 - Дозволено: `git diff`, `git log`, `git show`, `git grep`, `git blame`, читання файлів. Додавай `--no-optional-locks` до git-команд, щоб git не намагався писати.
 - Помилка `dubious ownership` — один раз виконай `git config --global --add safe.directory <шлях>` (це конфіг пісочниці, не репозиторію).
