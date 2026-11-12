@@ -41,7 +41,7 @@
    ```
    З `.venv` — активуйте його (`source .venv/bin/activate`) перед запуском `claude`.
 
-Playwright MCP підключається автоматично з `.mcp.json` (потрібен Node.js 18+).
+Playwright MCP і Azure DevOps MCP підключаються з `.mcp.json` (потрібен Node.js 20+). Встановлення Azure DevOps MCP — `docs/azure-devops-mcp-macos.md`.
 
 ## Структура
 
